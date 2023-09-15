@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="calcWrapper">
+      <form onsubmit="calcTrink(); return false">
+        <h1>Trinkgeldrechner</h1>
+        <div class="inputWrapper">
+          <p>Wie hoch war die Rechung?</p>
+          <label for="bill">💰</label>
+          <input type="number" step="0.01" id="bill" />
+        </div>
+        <div class="inputWrapper">
+          <p>Wie viele Personen teilen sich die Rechnung?</p>
+          <label for="person">👥</label>
+          <input type="number" step="0.01" id="person" />
+        </div>
+
+        <select id="service">
+          <option value="">Wie war der service?</option>
+          <option value="1.02">Schlechter Service</option>
+          <option value="1.1">Mittlerer Service</option>
+          <option value="1.2">Super Service</option>
+        </select>
+        <button type="submit">Berechne</button>
+        <div id="trinkGeld"></div>
+        <div id="gesamtBetrag"></div>
+        <div id="preisPerson"></div>
+      </form>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

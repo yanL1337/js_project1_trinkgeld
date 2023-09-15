@@ -1,0 +1,30 @@
+label {
+  font-size: 2rem;
+}
+
+/* .inputWrapper {
+  display: flex;
+  flex-direction: column;
+} */
+
+form {
+  background-color: tomato;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.calcWrapper {
+  padding: 20px 50px;
+  display: flex;
+}
+
+input,
+select {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 80%;
+}
